@@ -1,0 +1,47 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu Mar 28 11:26:04 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "DPSwitch<0>" LOCATE = SITE "P70" LEVEL 1;
+COMP "DPSwitch<1>" LOCATE = SITE "P69" LEVEL 1;
+COMP "DPSwitch<2>" LOCATE = SITE "P68" LEVEL 1;
+COMP "DPSwitch<3>" LOCATE = SITE "P64" LEVEL 1;
+COMP "DPSwitch<4>" LOCATE = SITE "P63" LEVEL 1;
+COMP "DPSwitch<5>" LOCATE = SITE "P60" LEVEL 1;
+COMP "DPSwitch<6>" LOCATE = SITE "P59" LEVEL 1;
+COMP "DPSwitch<7>" LOCATE = SITE "P58" LEVEL 1;
+COMP "Clk" LOCATE = SITE "P129" LEVEL 1;
+COMP "Blue<1>" LOCATE = SITE "P96" LEVEL 1;
+COMP "Blue<2>" LOCATE = SITE "P98" LEVEL 1;
+COMP "Audio_L" LOCATE = SITE "P88" LEVEL 1;
+COMP "Audio_R" LOCATE = SITE "P87" LEVEL 1;
+COMP "Green<0>" LOCATE = SITE "P99" LEVEL 1;
+COMP "Green<1>" LOCATE = SITE "P101" LEVEL 1;
+COMP "Green<2>" LOCATE = SITE "P102" LEVEL 1;
+COMP "SevenSegment<0>" LOCATE = SITE "P114" LEVEL 1;
+COMP "SevenSegment<1>" LOCATE = SITE "P110" LEVEL 1;
+COMP "SevenSegment<2>" LOCATE = SITE "P111" LEVEL 1;
+COMP "SevenSegment<3>" LOCATE = SITE "P112" LEVEL 1;
+COMP "SevenSegment<4>" LOCATE = SITE "P113" LEVEL 1;
+COMP "SevenSegment<5>" LOCATE = SITE "P115" LEVEL 1;
+COMP "SevenSegment<6>" LOCATE = SITE "P116" LEVEL 1;
+COMP "SevenSegment<7>" LOCATE = SITE "P117" LEVEL 1;
+COMP "hsync" LOCATE = SITE "P93" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P92" LEVEL 1;
+COMP "Enable<0>" LOCATE = SITE "P120" LEVEL 1;
+COMP "Enable<1>" LOCATE = SITE "P121" LEVEL 1;
+COMP "Enable<2>" LOCATE = SITE "P124" LEVEL 1;
+COMP "Red<0>" LOCATE = SITE "P103" LEVEL 1;
+COMP "Red<1>" LOCATE = SITE "P104" LEVEL 1;
+COMP "Red<2>" LOCATE = SITE "P105" LEVEL 1;
+COMP "Switch<0>" LOCATE = SITE "P80" LEVEL 1;
+COMP "Switch<1>" LOCATE = SITE "P79" LEVEL 1;
+COMP "Switch<2>" LOCATE = SITE "P78" LEVEL 1;
+COMP "Switch<3>" LOCATE = SITE "P77" LEVEL 1;
+COMP "Switch<4>" LOCATE = SITE "P76" LEVEL 1;
+COMP "Switch<5>" LOCATE = SITE "P75" LEVEL 1;
+NET "clocking_inst/CLKIN_IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

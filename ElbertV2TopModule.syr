@@ -1,0 +1,1025 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: ElbertV2TopModule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ElbertV2TopModule.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ElbertV2TopModule"
+Output Format                      : NGC
+Target Device                      : xc3s50a-4-tq144
+
+---- Source Options
+Top Module Name                    : ElbertV2TopModule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/VGADisplay.vhd" in Library work.
+Entity <vgadisplay> compiled.
+Entity <vgadisplay> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/clocking.vhd" in Library work.
+Architecture behavioral of Entity clocking is up to date.
+Compiling vhdl file "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2VGA.vhd" in Library work.
+Architecture behavioral of Entity elbertv2vga is up to date.
+Compiling vhdl file "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2Audio.vhd" in Library work.
+Architecture behavioral of Entity elbertv2audio is up to date.
+Compiling vhdl file "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2SevenSegmentDisplay.vhd" in Library work.
+Architecture rtl of Entity elbertv2sevensegmentdisplay is up to date.
+Compiling vhdl file "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2TopModule.vhd" in Library work.
+Architecture behavioral of Entity elbertv2topmodule is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ElbertV2TopModule> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clocking> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ElbertV2VGA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ElbertV2Audio> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ElbertV2SevenSegmentDisplay> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <VGADisplay> in library <work> (architecture <Behavioral>) with generics.
+	OutputHeight = 40
+	OutputWidth = 10
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ElbertV2TopModule> in library <work> (Architecture <behavioral>).
+WARNING:Xst:752 - "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2TopModule.vhd" line 111: Unconnected input port 'RST_IN' of component 'clocking' is tied to default value.
+WARNING:Xst:753 - "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2TopModule.vhd" line 111: Unconnected output port 'CLKIN_IBUFG_OUT' of component 'clocking'.
+WARNING:Xst:753 - "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2TopModule.vhd" line 111: Unconnected output port 'CLK0_OUT' of component 'clocking'.
+Entity <ElbertV2TopModule> analyzed. Unit <ElbertV2TopModule> generated.
+
+Analyzing Entity <clocking> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <clocking>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <clocking>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <clocking>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <clocking>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "CLKFX_DIVIDE =  3" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "CLKFX_MULTIPLY =  25" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "CLKIN_PERIOD =  83.3329999999999980" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <clocking>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <clocking>.
+Entity <clocking> analyzed. Unit <clocking> generated.
+
+Analyzing Entity <ElbertV2VGA> in library <work> (Architecture <behavioral>).
+Entity <ElbertV2VGA> analyzed. Unit <ElbertV2VGA> generated.
+
+Analyzing generic Entity <VGADisplay> in library <work> (Architecture <Behavioral>).
+	OutputHeight = 40
+	OutputWidth = 10
+Entity <VGADisplay> analyzed. Unit <VGADisplay> generated.
+
+Analyzing Entity <ElbertV2Audio> in library <work> (Architecture <behavioral>).
+Entity <ElbertV2Audio> analyzed. Unit <ElbertV2Audio> generated.
+
+Analyzing Entity <ElbertV2SevenSegmentDisplay> in library <work> (Architecture <rtl>).
+Entity <ElbertV2SevenSegmentDisplay> analyzed. Unit <ElbertV2SevenSegmentDisplay> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ElbertV2Audio>.
+    Related source file is "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2Audio.vhd".
+    Found 1-bit register for signal <Audio_L>.
+    Found 1-bit register for signal <Audio_R>.
+    Found 32-bit down counter for signal <count>.
+    Found 32-bit up counter for signal <counter>.
+    Found 1-bit register for signal <pwm>.
+    Found 32-bit down counter for signal <pwmcount>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <ElbertV2Audio> synthesized.
+
+
+Synthesizing Unit <ElbertV2SevenSegmentDisplay>.
+    Related source file is "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2SevenSegmentDisplay.vhd".
+WARNING:Xst:1780 - Signal <state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 16x8-bit ROM for signal <SevenSegment$mux0001>.
+    Found 8-bit register for signal <SevenSegment>.
+    Found 3-bit register for signal <Enable>.
+    Found 32-bit register for signal <bcd>.
+    Found 32-bit adder for signal <bcd$addsub0000> created at line 76.
+    Found 1-bit register for signal <clk_i>.
+    Found 28-bit up counter for signal <counter>.
+    Found 3-bit register for signal <En>.
+    Found 32-bit up counter for signal <i>.
+    Found 8-bit register for signal <SevenSegment_O>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ElbertV2SevenSegmentDisplay> synthesized.
+
+
+Synthesizing Unit <VGADisplay>.
+    Related source file is "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/VGADisplay.vhd".
+WARNING:Xst:647 - Input <Switch<5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Switch<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Switch<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <yG> is used but never assigned. This sourceless signal will be automatically connected to value 011011000.
+WARNING:Xst:653 - Signal <y3> is used but never assigned. This sourceless signal will be automatically connected to value 101000100.
+WARNING:Xst:653 - Signal <y2> is used but never assigned. This sourceless signal will be automatically connected to value 011100000.
+WARNING:Xst:653 - Signal <y> is used but never assigned. This sourceless signal will be automatically connected to value 001111100.
+WARNING:Xst:1780 - Signal <xwing_star_fighter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <xS> is used but never assigned. This sourceless signal will be automatically connected to value 0000011110.
+WARNING:Xst:653 - Signal <xG> is used but never assigned. This sourceless signal will be automatically connected to value 0100101000.
+WARNING:Xst:1781 - Signal <m3> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <m2> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <m> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <ho229_flight_unit2> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <ho229_flight_unit1> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <game_over_graphic> is used but never assigned. Tied to default value.
+    Found 48x48-bit ROM for signal <row$mux0001> created at line 566.
+    Found 48x48-bit ROM for signal <row2$mux0001> created at line 575.
+    Found 48x48-bit ROM for signal <row3$mux0001> created at line 584.
+    Found 48x48-bit ROM for signal <rowG$mux0001> created at line 609.
+    Found 8-bit register for signal <pixels>.
+    Found 31-bit up counter for signal <animate_counter_x>.
+    Found 31-bit up counter for signal <animate_counter_y>.
+    Found 3-bit up counter for signal <debounce_counter_down>.
+    Found 3-bit up counter for signal <debounce_counter_up>.
+    Found 3-bit register for signal <explosion>.
+    Found 3-bit adder for signal <explosion$addsub0000> created at line 466.
+    Found 1-bit register for signal <game_over>.
+    Found 3-bit comparator greatequal for signal <game_over$cmp_ge0000> created at line 457.
+    Found 10-bit comparator greatequal for signal <game_over$cmp_ge0001> created at line 597.
+    Found 10-bit comparator greatequal for signal <game_over$cmp_ge0002> created at line 598.
+    Found 10-bit comparator greatequal for signal <game_over$cmp_ge0003> created at line 600.
+    Found 10-bit comparator greater for signal <game_over$cmp_gt0000> created at line 600.
+    Found 10-bit comparator greater for signal <game_over$cmp_gt0001> created at line 598.
+    Found 10-bit comparator greater for signal <game_over$cmp_gt0002> created at line 597.
+    Found 10-bit comparator lessequal for signal <game_over$cmp_le0000> created at line 597.
+    Found 10-bit comparator lessequal for signal <game_over$cmp_le0001> created at line 598.
+    Found 10-bit comparator lessequal for signal <game_over$cmp_le0002> created at line 600.
+    Found 10-bit comparator less for signal <game_over$cmp_lt0000> created at line 600.
+    Found 10-bit comparator less for signal <game_over$cmp_lt0001> created at line 598.
+    Found 10-bit comparator less for signal <game_over$cmp_lt0002> created at line 597.
+    Found 9-bit register for signal <meteor_spawn_delay_counter>.
+    Found 9-bit adder for signal <meteor_spawn_delay_counter$addsub0000> created at line 498.
+    Found 10-bit comparator greatequal for signal <pixels$cmp_ge0000> created at line 608.
+    Found 10-bit comparator greatequal for signal <pixels$cmp_ge0001> created at line 608.
+    Found 10-bit comparator greatequal for signal <pixels$cmp_ge0002> created at line 561.
+    Found 10-bit comparator greatequal for signal <pixels$cmp_ge0003> created at line 562.
+    Found 10-bit comparator greatequal for signal <pixels$cmp_ge0004> created at line 570.
+    Found 10-bit comparator greatequal for signal <pixels$cmp_ge0005> created at line 579.
+    Found 10-bit comparator greatequal for signal <pixels$cmp_ge0006> created at line 579.
+    Found 10-bit comparator lessequal for signal <pixels$cmp_le0000> created at line 608.
+    Found 10-bit comparator lessequal for signal <pixels$cmp_le0001> created at line 608.
+    Found 10-bit comparator lessequal for signal <pixels$cmp_le0002> created at line 579.
+    Found 10-bit comparator lessequal for signal <pixels$cmp_le0003> created at line 579.
+    Found 48-bit register for signal <row>.
+    Found 10-bit adder for signal <row$add0000> created at line 561.
+    Found 10-bit adder for signal <row$add0002> created at line 562.
+    Found 11-bit subtractor for signal <row$addsub0000> created at line 567.
+    Found 11-bit subtractor for signal <row$addsub0001> created at line 566.
+    Found 9-bit adder carry out for signal <row$addsub0002> created at line 561.
+    Found 9-bit adder carry out for signal <row$addsub0003> created at line 562.
+    Found 10-bit comparator greatequal for signal <row$cmp_ge0000> created at line 561.
+    Found 10-bit comparator greatequal for signal <row$cmp_ge0001> created at line 561.
+    Found 10-bit comparator greater for signal <row$cmp_gt0000> created at line 562.
+    Found 10-bit comparator greater for signal <row$cmp_gt0001> created at line 562.
+    Found 10-bit comparator lessequal for signal <row$cmp_le0000> created at line 561.
+    Found 10-bit comparator lessequal for signal <row$cmp_le0001> created at line 561.
+    Found 10-bit comparator less for signal <row$cmp_lt0000> created at line 562.
+    Found 10-bit comparator less for signal <row$cmp_lt0001> created at line 562.
+    Found 1-bit 48-to-1 multiplexer for signal <row$mux0000> created at line 567.
+    Found 48-bit register for signal <row2>.
+    Found 10-bit adder for signal <row2$add0000> created at line 570.
+    Found 11-bit subtractor for signal <row2$addsub0000> created at line 576.
+    Found 11-bit subtractor for signal <row2$addsub0001> created at line 575.
+    Found 9-bit adder carry out for signal <row2$addsub0002> created at line 570.
+    Found 10-bit comparator greatequal for signal <row2$cmp_ge0000> created at line 562.
+    Found 10-bit comparator greater for signal <row2$cmp_gt0000> created at line 570.
+    Found 10-bit comparator greater for signal <row2$cmp_gt0001> created at line 570.
+    Found 10-bit comparator lessequal for signal <row2$cmp_le0000> created at line 562.
+    Found 10-bit comparator lessequal for signal <row2$cmp_le0001> created at line 562.
+    Found 10-bit comparator less for signal <row2$cmp_lt0000> created at line 570.
+    Found 10-bit comparator less for signal <row2$cmp_lt0001> created at line 570.
+    Found 1-bit 48-to-1 multiplexer for signal <row2$mux0000> created at line 576.
+    Found 48-bit register for signal <row3>.
+    Found 10-bit adder for signal <row3$add0000> created at line 579.
+    Found 11-bit subtractor for signal <row3$addsub0000> created at line 585.
+    Found 11-bit subtractor for signal <row3$addsub0001> created at line 584.
+    Found 9-bit adder carry out for signal <row3$addsub0002> created at line 579.
+    Found 10-bit comparator greatequal for signal <row3$cmp_ge0000> created at line 570.
+    Found 10-bit comparator greater for signal <row3$cmp_gt0000> created at line 579.
+    Found 10-bit comparator greater for signal <row3$cmp_gt0001> created at line 579.
+    Found 10-bit comparator lessequal for signal <row3$cmp_le0000> created at line 570.
+    Found 10-bit comparator lessequal for signal <row3$cmp_le0001> created at line 570.
+    Found 10-bit comparator less for signal <row3$cmp_lt0000> created at line 579.
+    Found 10-bit comparator less for signal <row3$cmp_lt0001> created at line 579.
+    Found 1-bit 48-to-1 multiplexer for signal <row3$mux0000> created at line 585.
+    Found 48-bit register for signal <rowG>.
+    Found 10-bit adder for signal <rowG$add0000> created at line 608.
+    Found 11-bit subtractor for signal <rowG$addsub0000> created at line 610.
+    Found 11-bit subtractor for signal <rowG$addsub0001> created at line 609.
+    Found 9-bit adder carry out for signal <rowG$addsub0002> created at line 608.
+    Found 10-bit comparator greater for signal <rowG$cmp_gt0000> created at line 608.
+    Found 10-bit comparator greater for signal <rowG$cmp_gt0001> created at line 608.
+    Found 10-bit comparator less for signal <rowG$cmp_lt0000> created at line 608.
+    Found 10-bit comparator less for signal <rowG$cmp_lt0001> created at line 608.
+    Found 1-bit 48-to-1 multiplexer for signal <rowG$mux0000> created at line 610.
+    Found 48-bit register for signal <rowS>.
+    Found 11-bit subtractor for signal <rowS$addsub0000> created at line 561.
+    Found 11-bit subtractor for signal <rowS$addsub0001> created at line 557.
+    Found 2-bit comparator greater for signal <rowS$cmp_gt0000> created at line 556.
+    Found 3-bit comparator less for signal <rowS$cmp_lt0000> created at line 457.
+    Found 1-bit 48-to-1 multiplexer for signal <rowS$mux0000> created at line 561.
+    Found 2-bit up counter for signal <ship_anim_counter>.
+    Found 1-bit register for signal <spawn_meteor1>.
+    Found 1-bit register for signal <spawn_meteor2>.
+    Found 1-bit register for signal <spawn_meteor3>.
+    Found 10-bit register for signal <x>.
+    Found 10-bit subtractor for signal <x$addsub0000> created at line 472.
+    Found 10-bit register for signal <x2>.
+    Found 10-bit subtractor for signal <x2$addsub0000> created at line 477.
+    Found 10-bit register for signal <x3>.
+    Found 10-bit subtractor for signal <x3$addsub0000> created at line 482.
+    Found 9-bit register for signal <yS>.
+    Found 9-bit comparator greatequal for signal <yS$cmp_ge0000> created at line 528.
+    Found 9-bit comparator greater for signal <yS$cmp_gt0000> created at line 514.
+    Found 9-bit comparator lessequal for signal <yS$cmp_le0000> created at line 514.
+    Found 9-bit comparator less for signal <yS$cmp_lt0000> created at line 528.
+    Found 9-bit addsub for signal <yS$share0000> created at line 528.
+    Summary:
+	inferred   4 ROM(s).
+	inferred   5 Counter(s).
+	inferred 303 D-type flip-flop(s).
+	inferred  26 Adder/Subtractor(s).
+	inferred  56 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <VGADisplay> synthesized.
+
+
+Synthesizing Unit <clocking>.
+    Related source file is "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/clocking.vhd".
+Unit <clocking> synthesized.
+
+
+Synthesizing Unit <ElbertV2VGA>.
+    Related source file is "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2VGA.vhd".
+WARNING:Xst:1780 - Signal <counter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <vsync>.
+    Found 2-bit register for signal <Blue>.
+    Found 3-bit register for signal <Green>.
+    Found 3-bit register for signal <Red>.
+    Found 1-bit register for signal <hsync>.
+    Found 1-bit register for signal <clock>.
+    Found 1-bit register for signal <divide_by_2>.
+    Found 10-bit comparator greatequal for signal <Green$cmp_ge0000> created at line 130.
+    Found 10-bit comparator greatequal for signal <Green$cmp_ge0001> created at line 130.
+    Found 10-bit up counter for signal <hCount>.
+    Found 10-bit comparator greatequal for signal <hsync$cmp_ge0000> created at line 123.
+    Found 10-bit comparator less for signal <hsync$cmp_lt0000> created at line 123.
+    Found 10-bit register for signal <nextHCount>.
+    Found 10-bit adder for signal <nextHCount$addsub0000> created at line 111.
+    Found 10-bit register for signal <nextVCount>.
+    Found 10-bit adder for signal <nextVCount$addsub0000> created at line 107.
+    Found 10-bit up counter for signal <vCount>.
+    Found 10-bit comparator greatequal for signal <vsync$cmp_ge0000> created at line 116.
+    Found 10-bit comparator less for signal <vsync$cmp_lt0000> created at line 116.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <ElbertV2VGA> synthesized.
+
+
+Synthesizing Unit <ElbertV2TopModule>.
+    Related source file is "C:/Users/ryanh/Dropbox/BRAC/CSE461/Projects/animated_game_stripped/src/ElbertV2TopModule.vhd".
+WARNING:Xst:653 - Signal <IO_P5_i> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+Unit <ElbertV2TopModule> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 5
+ 16x8-bit ROM                                          : 1
+ 48x48-bit ROM                                         : 4
+# Adders/Subtractors                                   : 29
+ 10-bit adder                                          : 7
+ 10-bit subtractor                                     : 3
+ 11-bit subtractor                                     : 10
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 9-bit adder                                           : 1
+ 9-bit adder carry out                                 : 5
+ 9-bit addsub                                          : 1
+# Counters                                             : 12
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 28-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 31-bit up counter                                     : 2
+ 32-bit down counter                                   : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 34
+ 1-bit register                                        : 12
+ 10-bit register                                       : 5
+ 2-bit register                                        : 1
+ 3-bit register                                        : 5
+ 32-bit register                                       : 1
+ 48-bit register                                       : 5
+ 8-bit register                                        : 3
+ 9-bit register                                        : 2
+# Comparators                                          : 62
+ 10-bit comparator greatequal                          : 18
+ 10-bit comparator greater                             : 11
+ 10-bit comparator less                                : 13
+ 10-bit comparator lessequal                           : 13
+ 2-bit comparator greater                              : 1
+ 3-bit comparator greatequal                           : 1
+ 3-bit comparator less                                 : 1
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5
+ 1-bit 48-to-1 multiplexer                             : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <rowS_0> in Unit <output> is equivalent to the following 10 FFs/Latches, which will be removed : <rowS_1> <rowS_2> <rowS_3> <rowS_4> <rowS_42> <rowS_43> <rowS_44> <rowS_45> <rowS_46> <rowS_47> 
+INFO:Xst:2261 - The FF/Latch <Enable_0> in Unit <SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <Enable_2> 
+WARNING:Xst:1710 - FF/Latch <rowS_0> (without init value) has a constant value of 0 in block <output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Enable_0> (without init value) has a constant value of 1 in block <SevenSegmentDisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Enable_1> (without init value) has a constant value of 0 in block <SevenSegmentDisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <rowS<47:42>> (without init value) have a constant value of 0 in block <VGADisplay>.
+
+Synthesizing (advanced) Unit <ElbertV2SevenSegmentDisplay>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_SevenSegment_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <ElbertV2SevenSegmentDisplay> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGADisplay>.
+INFO:Xst:3044 - The ROM <Mrom_row_mux0001> will be implemented as a read-only BLOCK RAM, absorbing the register: <row>.
+INFO:Xst:3045 - The ROM description <Mrom_row2_mux0001> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <Mrom_row3_mux0001> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <Mrom_rowG_mux0001> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3225 - The RAM <Mrom_row_mux0001> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 48-word x 48-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     enA            | connected to signal <row_not0001>   | high     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <row>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <VGADisplay> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 48x48-bit single-port block RAM                       : 1
+# ROMs                                                 : 4
+ 16x8-bit ROM                                          : 1
+ 48x48-bit ROM                                         : 3
+# Adders/Subtractors                                   : 29
+ 10-bit adder                                          : 7
+ 10-bit subtractor                                     : 3
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 6-bit subtractor                                      : 10
+ 9-bit adder                                           : 1
+ 9-bit adder carry out                                 : 5
+ 9-bit addsub                                          : 1
+# Counters                                             : 11
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 28-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 31-bit up counter                                     : 1
+ 32-bit down counter                                   : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 339
+ Flip-Flops                                            : 339
+# Comparators                                          : 62
+ 10-bit comparator greatequal                          : 18
+ 10-bit comparator greater                             : 11
+ 10-bit comparator less                                : 13
+ 10-bit comparator lessequal                           : 13
+ 2-bit comparator greater                              : 1
+ 3-bit comparator greatequal                           : 1
+ 3-bit comparator less                                 : 1
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5
+ 1-bit 48-to-1 multiplexer                             : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <rowS_0> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowS_1> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowS_2> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowS_3> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowS_4> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <SevenSegment_O_7> in Unit <ElbertV2SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <SevenSegment_7> 
+INFO:Xst:2261 - The FF/Latch <SevenSegment_O_6> in Unit <ElbertV2SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <SevenSegment_6> 
+INFO:Xst:2261 - The FF/Latch <SevenSegment_O_5> in Unit <ElbertV2SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <SevenSegment_5> 
+INFO:Xst:2261 - The FF/Latch <SevenSegment_O_4> in Unit <ElbertV2SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <SevenSegment_4> 
+INFO:Xst:2261 - The FF/Latch <SevenSegment_O_1> in Unit <ElbertV2SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <SevenSegment_1> 
+INFO:Xst:2261 - The FF/Latch <SevenSegment_O_0> in Unit <ElbertV2SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <SevenSegment_0> 
+INFO:Xst:2261 - The FF/Latch <rowS_5> in Unit <VGADisplay> is equivalent to the following 2 FFs/Latches, which will be removed : <rowS_6> <rowS_7> 
+INFO:Xst:2261 - The FF/Latch <pixels_1> in Unit <VGADisplay> is equivalent to the following FF/Latch, which will be removed : <pixels_4> 
+INFO:Xst:2261 - The FF/Latch <rowS_8> in Unit <VGADisplay> is equivalent to the following 2 FFs/Latches, which will be removed : <rowS_9> <rowS_15> 
+INFO:Xst:2261 - The FF/Latch <rowS_16> in Unit <VGADisplay> is equivalent to the following 3 FFs/Latches, which will be removed : <rowS_18> <rowS_40> <rowS_41> 
+WARNING:Xst:1710 - FF/Latch <Enable_0> (without init value) has a constant value of 1 in block <ElbertV2SevenSegmentDisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Enable_1> (without init value) has a constant value of 0 in block <ElbertV2SevenSegmentDisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Enable_2> (without init value) has a constant value of 1 in block <ElbertV2SevenSegmentDisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <En_0> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <En_1> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <En_2> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_28> of sequential type is unconnected in block <ElbertV2Audio>.
+WARNING:Xst:2677 - Node <counter_29> of sequential type is unconnected in block <ElbertV2Audio>.
+WARNING:Xst:2677 - Node <counter_30> of sequential type is unconnected in block <ElbertV2Audio>.
+WARNING:Xst:2677 - Node <counter_31> of sequential type is unconnected in block <ElbertV2Audio>.
+WARNING:Xst:2677 - Node <counter_19> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_20> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_21> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_22> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_23> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_24> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_25> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_26> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:2677 - Node <counter_27> of sequential type is unconnected in block <ElbertV2SevenSegmentDisplay>.
+WARNING:Xst:1710 - FF/Latch <rowG_47> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_46> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_45> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_44> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_43> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_42> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_24> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_14> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_4> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_3> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_2> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_1> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rowG_0> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row3_47> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row3_1> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row3_0> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row2_47> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row2_0> (without init value) has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x3_1> has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x3_0> has a constant value of 0 in block <VGADisplay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <animate_counter_x_21> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_22> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_23> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_24> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_25> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_26> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_27> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_28> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_29> of sequential type is unconnected in block <VGADisplay>.
+WARNING:Xst:2677 - Node <animate_counter_x_30> of sequential type is unconnected in block <VGADisplay>.
+INFO:Xst:2261 - The FF/Latch <SevenSegment_O_3> in Unit <ElbertV2SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <SevenSegment_3> 
+INFO:Xst:2261 - The FF/Latch <SevenSegment_O_2> in Unit <ElbertV2SevenSegmentDisplay> is equivalent to the following FF/Latch, which will be removed : <SevenSegment_2> 
+INFO:Xst:2261 - The FF/Latch <row3_16> in Unit <VGADisplay> is equivalent to the following FF/Latch, which will be removed : <row3_17> 
+INFO:Xst:2261 - The FF/Latch <rowG_15> in Unit <VGADisplay> is equivalent to the following FF/Latch, which will be removed : <rowG_23> 
+INFO:Xst:2261 - The FF/Latch <rowG_17> in Unit <VGADisplay> is equivalent to the following FF/Latch, which will be removed : <rowG_21> 
+INFO:Xst:2261 - The FF/Latch <rowG_18> in Unit <VGADisplay> is equivalent to the following FF/Latch, which will be removed : <rowG_20> 
+INFO:Xst:2261 - The FF/Latch <rowG_25> in Unit <VGADisplay> is equivalent to the following 2 FFs/Latches, which will be removed : <rowG_26> <rowG_35> 
+INFO:Xst:2261 - The FF/Latch <rowG_33> in Unit <VGADisplay> is equivalent to the following FF/Latch, which will be removed : <rowG_34> 
+INFO:Xst:2261 - The FF/Latch <rowS_10> in Unit <VGADisplay> is equivalent to the following 4 FFs/Latches, which will be removed : <rowS_11> <rowS_12> <rowS_13> <rowS_14> 
+
+Optimizing unit <ElbertV2TopModule> ...
+
+Optimizing unit <ElbertV2Audio> ...
+
+Optimizing unit <ElbertV2SevenSegmentDisplay> ...
+
+Optimizing unit <VGADisplay> ...
+
+Optimizing unit <ElbertV2VGA> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <VGA_inst/Blue_2> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch, which will be removed : <VGA_inst/Green_2> 
+Found area constraint ratio of 100 (+ 5) on block ElbertV2TopModule, actual ratio is 106.
+Optimizing block <ElbertV2TopModule> to meet ratio 100 (+ 5) of 704 slices :
+Area constraint is met for block <ElbertV2TopModule>, final ratio is 101.
+INFO:Xst:2260 - The FF/Latch <VGA_inst/output/row2_15> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch : <VGA_inst/output/row2_16> 
+INFO:Xst:2260 - The FF/Latch <VGA_inst/output/row3_21> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch : <VGA_inst/output/row3_22> 
+INFO:Xst:2260 - The FF/Latch <VGA_inst/output/row2_33> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch : <VGA_inst/output/row2_34> 
+INFO:Xst:2260 - The FF/Latch <VGA_inst/output/row3_33> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch : <VGA_inst/output/row3_34> 
+INFO:Xst:2260 - The FF/Latch <VGA_inst/output/row3_30> in Unit <ElbertV2TopModule> is equivalent to the following 2 FFs/Latches : <VGA_inst/output/row3_31> <VGA_inst/output/row3_32> 
+INFO:Xst:2261 - The FF/Latch <VGA_inst/output/row2_15> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch, which will be removed : <VGA_inst/output/row2_16> 
+INFO:Xst:2261 - The FF/Latch <VGA_inst/output/row3_21> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch, which will be removed : <VGA_inst/output/row3_22> 
+INFO:Xst:2261 - The FF/Latch <VGA_inst/output/row2_33> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch, which will be removed : <VGA_inst/output/row2_34> 
+INFO:Xst:2261 - The FF/Latch <VGA_inst/output/row3_33> in Unit <ElbertV2TopModule> is equivalent to the following FF/Latch, which will be removed : <VGA_inst/output/row3_34> 
+INFO:Xst:2261 - The FF/Latch <VGA_inst/output/row3_30> in Unit <ElbertV2TopModule> is equivalent to the following 2 FFs/Latches, which will be removed : <VGA_inst/output/row3_31> <VGA_inst/output/row3_32> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 466
+ Flip-Flops                                            : 466
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ElbertV2TopModule.ngr
+Top Level Output File Name         : ElbertV2TopModule
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 38
+
+Cell Usage :
+# BELS                             : 2330
+#      GND                         : 1
+#      INV                         : 121
+#      LUT1                        : 196
+#      LUT2                        : 224
+#      LUT3                        : 219
+#      LUT4                        : 527
+#      MUXCY                       : 430
+#      MUXF5                       : 179
+#      MUXF6                       : 80
+#      MUXF7                       : 13
+#      MUXF8                       : 4
+#      VCC                         : 1
+#      XORCY                       : 335
+# FlipFlops/Latches                : 466
+#      FD                          : 24
+#      FDE                         : 325
+#      FDR                         : 45
+#      FDRE                        : 58
+#      FDS                         : 14
+# RAMS                             : 2
+#      RAMB16BWE                   : 2
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 35
+#      IBUF                        : 11
+#      IBUFG                       : 1
+#      OBUF                        : 23
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-4 
+
+ Number of Slices:                      720  out of    704   102% (*) 
+ Number of Slice Flip Flops:            466  out of   1408    33%  
+ Number of 4 input LUTs:               1287  out of   1408    91%  
+ Number of IOs:                          38
+ Number of bonded IOBs:                  35  out of    108    32%  
+ Number of BRAMs:                         2  out of      3    66%  
+ Number of GCLKs:                         4  out of     24    16%  
+ Number of DCMs:                          1  out of      2    50%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)          | Load  |
+-----------------------------------+--------------------------------+-------+
+Clk                                | clocking_inst/DCM_SP_INST:CLKFX| 116   |
+SevenSegmentDisplay/clk_i1         | BUFG                           | 72    |
+VGA_inst/clock1                    | BUFG                           | 280   |
+-----------------------------------+--------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 56.117ns (Maximum Frequency: 17.820MHz)
+   Minimum input arrival time before clock: 11.928ns
+   Maximum output required time after clock: 5.558ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 56.117ns (frequency: 17.820MHz)
+  Total number of paths / destination ports: 5892 / 207
+-------------------------------------------------------------------------
+Delay:               6.734ns (Levels of Logic = 34)
+  Source:            Audio_Inst/pwmcount_0 (FF)
+  Destination:       Audio_Inst/pwmcount_31 (FF)
+  Source Clock:      Clk rising 8.3X
+  Destination Clock: Clk rising 8.3X
+
+  Data Path: Audio_Inst/pwmcount_0 to Audio_Inst/pwmcount_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.674  Audio_Inst/pwmcount_0 (Audio_Inst/pwmcount_0)
+     LUT1:I0->O            1   0.648   0.000  Audio_Inst/Mcount_pwmcount_cy<0>_rt (Audio_Inst/Mcount_pwmcount_cy<0>_rt)
+     MUXCY:S->O            1   0.632   0.000  Audio_Inst/Mcount_pwmcount_cy<0> (Audio_Inst/Mcount_pwmcount_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<1> (Audio_Inst/Mcount_pwmcount_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<2> (Audio_Inst/Mcount_pwmcount_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<3> (Audio_Inst/Mcount_pwmcount_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<4> (Audio_Inst/Mcount_pwmcount_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<5> (Audio_Inst/Mcount_pwmcount_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<6> (Audio_Inst/Mcount_pwmcount_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<7> (Audio_Inst/Mcount_pwmcount_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<8> (Audio_Inst/Mcount_pwmcount_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<9> (Audio_Inst/Mcount_pwmcount_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<10> (Audio_Inst/Mcount_pwmcount_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<11> (Audio_Inst/Mcount_pwmcount_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<12> (Audio_Inst/Mcount_pwmcount_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<13> (Audio_Inst/Mcount_pwmcount_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<14> (Audio_Inst/Mcount_pwmcount_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<15> (Audio_Inst/Mcount_pwmcount_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<16> (Audio_Inst/Mcount_pwmcount_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<17> (Audio_Inst/Mcount_pwmcount_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<18> (Audio_Inst/Mcount_pwmcount_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<19> (Audio_Inst/Mcount_pwmcount_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<20> (Audio_Inst/Mcount_pwmcount_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<21> (Audio_Inst/Mcount_pwmcount_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<22> (Audio_Inst/Mcount_pwmcount_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<23> (Audio_Inst/Mcount_pwmcount_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<24> (Audio_Inst/Mcount_pwmcount_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<25> (Audio_Inst/Mcount_pwmcount_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<26> (Audio_Inst/Mcount_pwmcount_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<27> (Audio_Inst/Mcount_pwmcount_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<28> (Audio_Inst/Mcount_pwmcount_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<29> (Audio_Inst/Mcount_pwmcount_cy<29>)
+     MUXCY:CI->O           0   0.065   0.000  Audio_Inst/Mcount_pwmcount_cy<30> (Audio_Inst/Mcount_pwmcount_cy<30>)
+     XORCY:CI->O           1   0.844   0.500  Audio_Inst/Mcount_pwmcount_xor<31> (Audio_Inst/Result<31>)
+     LUT2:I1->O            1   0.643   0.000  Audio_Inst/Mcount_pwmcount_eqn_311 (Audio_Inst/Mcount_pwmcount_eqn_31)
+     FDE:D                     0.252          Audio_Inst/pwmcount_31
+    ----------------------------------------
+    Total                      6.734ns (5.560ns logic, 1.174ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SevenSegmentDisplay/clk_i1'
+  Clock period: 7.406ns (frequency: 135.026MHz)
+  Total number of paths / destination ports: 5458 / 143
+-------------------------------------------------------------------------
+Delay:               7.406ns (Levels of Logic = 11)
+  Source:            SevenSegmentDisplay/bcd_23 (FF)
+  Destination:       SevenSegmentDisplay/SevenSegment_O_5 (FF)
+  Source Clock:      SevenSegmentDisplay/clk_i1 rising
+  Destination Clock: SevenSegmentDisplay/clk_i1 rising
+
+  Data Path: SevenSegmentDisplay/bcd_23 to SevenSegmentDisplay/SevenSegment_O_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.590  SevenSegmentDisplay/bcd_23 (SevenSegmentDisplay/bcd_23)
+     LUT4:I0->O            1   0.648   0.000  SevenSegmentDisplay/bcd_not00011_wg_lut<0> (SevenSegmentDisplay/bcd_not00011_wg_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SevenSegmentDisplay/bcd_not00011_wg_cy<0> (SevenSegmentDisplay/bcd_not00011_wg_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SevenSegmentDisplay/bcd_not00011_wg_cy<1> (SevenSegmentDisplay/bcd_not00011_wg_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SevenSegmentDisplay/bcd_not00011_wg_cy<2> (SevenSegmentDisplay/bcd_not00011_wg_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  SevenSegmentDisplay/bcd_not00011_wg_cy<3> (SevenSegmentDisplay/bcd_not00011_wg_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  SevenSegmentDisplay/bcd_not00011_wg_cy<4> (SevenSegmentDisplay/bcd_not00011_wg_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  SevenSegmentDisplay/bcd_not00011_wg_cy<5> (SevenSegmentDisplay/bcd_not00011_wg_cy<5>)
+     MUXCY:CI->O           3   0.269   0.531  SevenSegmentDisplay/bcd_not00011_wg_cy<6> (SevenSegmentDisplay/SevenSegment_and0028)
+     MUXF5:S->O            7   0.756   0.851  SevenSegmentDisplay/SevenSegment_O_mux0001<3>1_f5 (SevenSegmentDisplay/N3)
+     LUT4:I0->O            1   0.648   0.000  SevenSegmentDisplay/SevenSegment_O_mux0001<2>22_F (N226)
+     MUXF5:I0->O           1   0.276   0.420  SevenSegmentDisplay/SevenSegment_O_mux0001<2>22 (SevenSegmentDisplay/SevenSegment_O_mux0001<2>22)
+     FDS:S                     0.869          SevenSegmentDisplay/SevenSegment_O_5
+    ----------------------------------------
+    Total                      7.406ns (5.014ns logic, 2.392ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'VGA_inst/clock1'
+  Clock period: 12.658ns (frequency: 79.001MHz)
+  Total number of paths / destination ports: 78946 / 588
+-------------------------------------------------------------------------
+Delay:               12.658ns (Levels of Logic = 19)
+  Source:            VGA_inst/output/x_0 (FF)
+  Destination:       VGA_inst/output/pixels_1 (FF)
+  Source Clock:      VGA_inst/clock1 rising
+  Destination Clock: VGA_inst/clock1 rising
+
+  Data Path: VGA_inst/output/x_0 to VGA_inst/output/pixels_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.633  VGA_inst/output/x_0 (VGA_inst/output/x_0)
+     INV:I->O              1   0.648   0.000  VGA_inst/output/Madd_row_add0002_lut<0>_INV_0 (VGA_inst/output/Madd_row_add0002_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  VGA_inst/output/Madd_row_add0002_cy<0> (VGA_inst/output/Madd_row_add0002_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Madd_row_add0002_cy<1> (VGA_inst/output/Madd_row_add0002_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Madd_row_add0002_cy<2> (VGA_inst/output/Madd_row_add0002_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Madd_row_add0002_cy<3> (VGA_inst/output/Madd_row_add0002_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Madd_row_add0002_cy<4> (VGA_inst/output/Madd_row_add0002_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Madd_row_add0002_cy<5> (VGA_inst/output/Madd_row_add0002_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Madd_row_add0002_cy<6> (VGA_inst/output/Madd_row_add0002_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Madd_row_add0002_cy<7> (VGA_inst/output/Madd_row_add0002_cy<7>)
+     MUXCY:CI->O           0   0.065   0.000  VGA_inst/output/Madd_row_add0002_cy<8> (VGA_inst/output/Madd_row_add0002_cy<8>)
+     XORCY:CI->O           1   0.844   0.563  VGA_inst/output/Madd_row_add0002_xor<9> (VGA_inst/output/row_add0002<9>)
+     LUT2:I0->O            1   0.648   0.000  VGA_inst/output/Mcompar_row_cmp_gt0000_lut<9> (VGA_inst/output/Mcompar_row_cmp_gt0000_lut<9>)
+     MUXCY:S->O            1   0.836   0.563  VGA_inst/output/Mcompar_row_cmp_gt0000_cy<9> (VGA_inst/output/Mcompar_row_cmp_gt0000_cy<9>)
+     LUT3:I0->O            1   0.648   0.452  VGA_inst/output/row_not0001156_SW1 (N228)
+     LUT4:I2->O            4   0.648   0.667  VGA_inst/output/row_not0001156 (VGA_inst/output/row2_and0000)
+     LUT2:I1->O            5   0.643   0.713  VGA_inst/output/pixels_and00031 (VGA_inst/output/pixels_and0003)
+     LUT4:I1->O            1   0.643   0.000  VGA_inst/output/pixels_mux0009<0>21 (VGA_inst/output/pixels_mux0009<0>2)
+     MUXF5:I1->O           2   0.276   0.590  VGA_inst/output/pixels_mux0009<0>2_f5 (VGA_inst/output/N251)
+     LUT3:I0->O            1   0.648   0.000  VGA_inst/output/pixels_mux0009<0>3 (VGA_inst/output/pixels_mux0009<0>)
+     FDE:D                     0.252          VGA_inst/output/pixels_7
+    ----------------------------------------
+    Total                     12.658ns (8.477ns logic, 4.181ns route)
+                                       (67.0% logic, 33.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SevenSegmentDisplay/clk_i1'
+  Total number of paths / destination ports: 1384 / 112
+-------------------------------------------------------------------------
+Offset:              11.928ns (Levels of Logic = 8)
+  Source:            DPSwitch<6> (PAD)
+  Destination:       SevenSegmentDisplay/SevenSegment_O_3 (FF)
+  Destination Clock: SevenSegmentDisplay/clk_i1 rising
+
+  Data Path: DPSwitch<6> to SevenSegmentDisplay/SevenSegment_O_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.849   1.025  DPSwitch_6_IBUF (DPSwitch_6_IBUF)
+     LUT3:I0->O            5   0.648   0.665  SevenSegmentDisplay/SevenSegment_O_mux0001<3>710 (SevenSegmentDisplay/N26)
+     LUT3:I2->O            1   0.648   0.423  SevenSegmentDisplay/SevenSegment_O_mux0001<0>22 (SevenSegmentDisplay/N13)
+     LUT4:I3->O           49   0.648   1.348  SevenSegmentDisplay/i_cmp_eq00001 (SevenSegmentDisplay/i_cmp_eq0000)
+     LUT4:I1->O            3   0.643   0.534  SevenSegmentDisplay/SevenSegment_O_mux0001<3>46 (SevenSegmentDisplay/N12)
+     LUT4:I3->O            3   0.648   0.674  SevenSegmentDisplay/SevenSegment_O_mux0001<4>211 (SevenSegmentDisplay/N27)
+     LUT3:I0->O            1   0.648   0.563  SevenSegmentDisplay/SevenSegment_O_mux0001<4>2_SW0 (N112)
+     LUT4:I0->O            2   0.648   0.447  SevenSegmentDisplay/SevenSegment_O_mux0001<4>2 (SevenSegmentDisplay/N4)
+     FDS:S                     0.869          SevenSegmentDisplay/SevenSegment_O_3
+    ----------------------------------------
+    Total                     11.928ns (6.249ns logic, 5.679ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'VGA_inst/clock1'
+  Total number of paths / destination ports: 149 / 68
+-------------------------------------------------------------------------
+Offset:              5.927ns (Levels of Logic = 12)
+  Source:            Switch<4> (PAD)
+  Destination:       VGA_inst/output/yS_8 (FF)
+  Destination Clock: VGA_inst/clock1 rising
+
+  Data Path: Switch<4> to VGA_inst/output/yS_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.849   1.041  Switch_4_IBUF (Switch_4_IBUF)
+     LUT4:I1->O            1   0.643   0.000  VGA_inst/output/Maddsub_yS_share0000_lut<0> (VGA_inst/output/Maddsub_yS_share0000_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  VGA_inst/output/Maddsub_yS_share0000_cy<0> (VGA_inst/output/Maddsub_yS_share0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Maddsub_yS_share0000_cy<1> (VGA_inst/output/Maddsub_yS_share0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Maddsub_yS_share0000_cy<2> (VGA_inst/output/Maddsub_yS_share0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Maddsub_yS_share0000_cy<3> (VGA_inst/output/Maddsub_yS_share0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Maddsub_yS_share0000_cy<4> (VGA_inst/output/Maddsub_yS_share0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Maddsub_yS_share0000_cy<5> (VGA_inst/output/Maddsub_yS_share0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  VGA_inst/output/Maddsub_yS_share0000_cy<6> (VGA_inst/output/Maddsub_yS_share0000_cy<6>)
+     MUXCY:CI->O           0   0.065   0.000  VGA_inst/output/Maddsub_yS_share0000_cy<7> (VGA_inst/output/Maddsub_yS_share0000_cy<7>)
+     XORCY:CI->O           1   0.844   0.563  VGA_inst/output/Maddsub_yS_share0000_xor<8> (VGA_inst/output/yS_share0000<8>)
+     LUT2:I0->O            1   0.648   0.000  VGA_inst/output/yS_mux0000<8>1 (VGA_inst/output/yS_mux0000<8>)
+     FDE:D                     0.252          VGA_inst/output/yS_8
+    ----------------------------------------
+    Total                      5.927ns (4.323ns logic, 1.604ns route)
+                                       (72.9% logic, 27.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_inst/clock1'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 1)
+  Source:            VGA_inst/Blue_2 (FF)
+  Destination:       Blue<2> (PAD)
+  Source Clock:      VGA_inst/clock1 rising
+
+  Data Path: VGA_inst/Blue_2 to Blue<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  VGA_inst/Blue_2 (VGA_inst/Blue_2)
+     OBUF:I->O                 4.520          Blue_2_OBUF (Blue<2>)
+    ----------------------------------------
+    Total                      5.558ns (5.111ns logic, 0.447ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 1)
+  Source:            Audio_Inst/Audio_L (FF)
+  Destination:       Audio_L (PAD)
+  Source Clock:      Clk rising 8.3X
+
+  Data Path: Audio_Inst/Audio_L to Audio_L
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  Audio_Inst/Audio_L (Audio_Inst/Audio_L)
+     OBUF:I->O                 4.520          Audio_L_OBUF (Audio_L)
+    ----------------------------------------
+    Total                      5.558ns (5.111ns logic, 0.447ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SevenSegmentDisplay/clk_i1'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 1)
+  Source:            SevenSegmentDisplay/SevenSegment_O_7 (FF)
+  Destination:       SevenSegment<7> (PAD)
+  Source Clock:      SevenSegmentDisplay/clk_i1 rising
+
+  Data Path: SevenSegmentDisplay/SevenSegment_O_7 to SevenSegment<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.591   0.447  SevenSegmentDisplay/SevenSegment_O_7 (SevenSegmentDisplay/SevenSegment_O_7)
+     OBUF:I->O                 4.520          SevenSegment_7_OBUF (SevenSegment<7>)
+    ----------------------------------------
+    Total                      5.558ns (5.111ns logic, 0.447ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.27 secs
+ 
+--> 
+
+Total memory usage is 274848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   81 (   0 filtered)
+Number of infos    :   39 (   0 filtered)
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped\ElbertV2TopModule.ncd
+OUTFILE=C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped\ElbertV2TopModule.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4tq144
+WORKINGDIR=C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped
+LICENSE=WebPack
+USER_INFO=211541868_0_0_433

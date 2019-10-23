@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">Switch&lt;1&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">Switch&lt;3&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">Switch&lt;5&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="772" delta="old" >To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of the DCM comp <arg fmt="%s" index="1">clocking_inst/DCM_SP_INST</arg>, consult the device Interactive Data Sheet.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA0</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA1</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA2</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA3</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA4</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA5</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA6</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA7</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA8</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA9</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA10</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA11</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA12</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA13</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA14</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA15</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA16</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA17</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA18</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA19</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA20</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA21</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA22</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA23</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA24</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA25</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA26</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA27</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA28</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA29</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA30</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA31</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00011</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA0</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA1</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA2</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA3</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA4</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA5</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA6</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA7</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA8</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA9</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA10</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DIA11</arg>&gt; on block:&lt;<arg fmt="%s" index="2">VGA_inst/output/Mrom_row_mux00012</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+</messages>
+

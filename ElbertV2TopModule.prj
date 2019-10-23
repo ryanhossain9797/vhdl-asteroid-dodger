@@ -1,0 +1,6 @@
+vhdl work "src/VGADisplay.vhd"
+vhdl work "src/ElbertV2VGA.vhd"
+vhdl work "src/ElbertV2SevenSegmentDisplay.vhd"
+vhdl work "src/ElbertV2Audio.vhd"
+vhdl work "clocking.vhd"
+vhdl work "src/ElbertV2TopModule.vhd"

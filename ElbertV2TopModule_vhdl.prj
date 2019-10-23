@@ -1,0 +1,6 @@
+vhdl work "C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped\src\VGADisplay.vhd"
+vhdl work "C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped\src\ElbertV2VGA.vhd"
+vhdl work "C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped\src\ElbertV2SevenSegmentDisplay.vhd"
+vhdl work "C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped\src\ElbertV2Audio.vhd"
+vhdl work "C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped\clocking.vhd"
+vhdl work "C:\Users\ryanh\Dropbox\BRAC\CSE461\Projects\animated_game_stripped\src\ElbertV2TopModule.vhd"
